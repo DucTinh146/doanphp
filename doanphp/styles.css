@@ -1,0 +1,386 @@
+body{
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    border:1px solid #000;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+i.fas.fa-plus.fa-style {
+    font-size: 20px;
+    color: #000;
+}
+i.fas.fa-minus.fa-style {
+    font-size: 20px;
+    color: #000;
+}
+i.fas.fa-plus.fa-style:hover {
+    color: aqua;
+}
+i.fas.fa-minus.fa-style:hover {
+    color: aqua;
+}
+.wrapper_chitiet{
+    /* border:1px solid #000; */
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.hinhanh_sanpham{
+    /* border:1px solid #000; */
+    float: left;
+    width: 50%;
+    margin:0 5px;
+}
+.chitiet_sanpham{
+    float: left;
+    width: 48%;
+}
+input.themgiohang {
+    color: black;
+    border: none;
+    background: aqua;
+    padding: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.header{
+    background-image: url("../doanphp/img/banner3.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 350px;
+    border:1px solid #ddd;
+    width: 100%;
+    height: 243px;
+    /* background-color: #ff1a8c; */
+}
+.menu{
+    /* border:1px solid #33FF51; */
+    width: 100%;
+    height: 50px;
+    background-color: #00FFFF;
+}
+ul.list_menu {
+    padding: 5px;
+    margin: 0;
+    /* width: 60%; */
+    /* border: 1px solid #fff; */
+    list-style: none;
+    /* margin:0 auto; */
+    line-height:27px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+ul.list_menu li:hover{
+    background: burlywood;
+}
+ul.list_menu li a {
+    
+   text-decoration: none;
+   text-align: center;
+   float: left;
+   margin: 5px;
+   color: #ff0000;
+   /* padding:5px; */
+   
+   line-height: 30px;
+   
+}
+ul.baiviet {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul.baiviet li {
+   border: 1px solid #ddd;
+   padding:10px;
+}
+#main{
+    border:1px solid #ddd;
+    width: 100%;
+    height: auto;
+    
+    
+    
+}
+.slidebar{
+    border:1px solid #ddd;
+    width: 100%;
+    height: auto;    
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+
+}
+ul.list_slidebar {
+    padding: 5px;
+    margin-right: 5px;
+    /* width: 60%; */
+    /* border: 1px solid #fff; */
+    list-style: none;
+    /* margin:0 auto; */
+    line-height:27px;
+    /* display: flex;
+    justify-content:center;
+    align-items: center; */
+    cursor: pointer;
+    
+}
+ul.list_slidebar li:hover{
+    background: rgb(61, 223, 28);
+}
+ul.list_slidebar li a {
+    display:block;
+   text-decoration: none;
+   text-align: left;
+   /* float: left; */
+   margin: 5px;
+   color: #00ffdd;
+   /* padding:5px; */
+   
+   line-height: 30px;
+   
+}
+.maincontent{
+    /* border:1px solid #ff0000; */
+    width: 100%;
+    height: auto;    
+    margin-top: 5px;
+    margin-left:5px;
+    float: right;
+}
+ul.Product_list{
+    /* display: flex; */
+    justify-items: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+    list-style: none;
+    width: 113%;
+}
+ul.Product_list li{
+    text-align:center;
+    float: left;
+    padding:5px;
+    margin: 5px;
+    width: 16%;
+    border: 1px solid #ddd;
+    /* background: #FFFACD; */
+    height:330px;
+
+}
+/* ul.Product_list li a{
+    text-decoration: none;
+} */
+ul.Product_list li img {
+    height: 150px;
+    width: 90%;
+}
+ul.Product_list li p {
+    color: red;
+}
+p .title_product {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+ul.Product_list li a {
+    text-decoration: none;
+}
+p .price_product {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    font-size: 14px;
+    color: red;
+}
+.footer{
+    border:1px solid #ff1a8c;
+    width: 100%;
+    height: 150px;
+    background-color: #00FFFF;
+
+
+}
+p.footer_copyright {
+    text-align: center;
+    color: #000;
+}
+.clear{
+    clear: both;
+}
+.tabs {
+    width: 100%;
+    background-color: #00FFFF;
+    border-radius: 5px 5px 5px 5px;
+  }
+  ul#tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    overflow: auto;
+  }
+  ul#tabs-nav li {
+    float: left;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 8px 10px;
+    border-radius: 5px 5px 5px 5px;
+    /*border: 1px solid #d5d5de;
+    border-bottom: none;*/
+    cursor: pointer;
+  }
+  ul#tabs-nav li:hover,
+  ul#tabs-nav li.active {
+    background-color: #08E;
+  }
+  #tabs-nav li a {
+    text-decoration: none;
+    color: #FFF;
+  }
+  .tab-content {
+    padding: 10px;
+    border: 5px solid #09F;
+    background-color: #FFF;
+  }
+  
+  /* Just for CodePen styling - don't include if you copy paste */
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  body { 
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    margin: 2em;
+  }
+  
+  
+ .form{
+   
+        margin-left: 23%;
+    
+}
+/* jQuery Demo */
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+  }
+  
+  /* Responsive Arrow Progress Bar */
+  
+  .container {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .arrow-steps .step {
+    font-size: 14px;
+    text-align: center;
+    color: #777;
+    cursor: default;
+    margin: 0 1px 0 0;
+    padding: 10px 0px 10px 0px;
+    width: 15%;
+    float: left;
+    position: relative;
+    background-color: #ddd;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .arrow-steps .step a {
+    color: #777;
+    text-decoration: none;
+  }
+  
+  .arrow-steps .step:after,
+  .arrow-steps .step:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -17px;
+    width: 0;
+    height: 0;
+    border-top: 19px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 17px solid #ddd;
+    z-index: 2;
+  }
+  
+  .arrow-steps .step:before {
+    right: auto;
+    left: 0;
+    border-left: 17px solid #fff;
+    z-index: 0;
+  }
+  
+  .arrow-steps .step:first-child:before {
+    border: none;
+  }
+  
+  .arrow-steps .step:last-child:after {
+     border: none;
+  }
+  
+  .arrow-steps .step:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .arrow-steps .step:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .arrow-steps .step span {
+    position: relative;
+  }
+  
+  *.arrow-steps .step.done span:before {
+    opacity: 1;
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    font-size: 11px;
+    line-height: 21px;
+  }
+  
+  .arrow-steps .step.current {
+    color: #fff;
+    background-color: #5599e5;
+  }
+  
+  .arrow-steps .step.current a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .arrow-steps .step.current:after {
+    border-left: 17px solid #5599e5;
+  }
+  
+  .arrow-steps .step.done {
+    color: #173352;
+    background-color: #2f69aa;
+  }
+  
+  .arrow-steps .step.done a {
+    color: #173352;
+    text-decoration: none;
+  }
+  
+  .arrow-steps .step.done:after {
+    border-left: 17px solid #2f69aa;
+  }
