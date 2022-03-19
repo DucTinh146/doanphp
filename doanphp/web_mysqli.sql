@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 18, 2022 lúc 12:36 PM
+-- Thời gian đã tạo: Th3 17, 2022 lúc 01:23 PM
 -- Phiên bản máy phục vụ: 10.4.22-MariaDB
 -- Phiên bản PHP: 8.1.2
 
@@ -164,10 +164,7 @@ INSERT INTO `tbl_cart` (`id_cart`, `id_khachhang`, `code_cart`, `cart_status`) V
 (80, 23, '7717', 1),
 (81, 23, '6890', 1),
 (82, 23, '5398', 1),
-(83, 23, '8905', 1),
-(84, 25, '971', 1),
-(85, 26, '8238', 1),
-(86, 26, '6092', 1);
+(83, 23, '8905', 1);
 
 -- --------------------------------------------------------
 
@@ -299,9 +296,7 @@ INSERT INTO `tbl_cart_details` (`id_cart_details`, `code_cart`, `id_sanpham`, `s
 (111, '5398', 40, 1),
 (112, '8905', 40, 1),
 (113, '8905', 38, 1),
-(114, '8905', 42, 1),
-(115, '971', 41, 1),
-(116, '8238', 41, 1);
+(114, '8905', 42, 1);
 
 -- --------------------------------------------------------
 
@@ -324,10 +319,7 @@ CREATE TABLE `tbl_dangky` (
 
 INSERT INTO `tbl_dangky` (`id_dangky`, `tenkhachhang`, `email`, `diachi`, `matkhau`, `dienthoai`) VALUES
 (23, 'tinh', 'ductinh1462@gmail.com', '12asd', '4297f44b13955235245b2497399d7a93', '09222'),
-(24, 'tinh', 'ductinh1462@gmail.com', '12asd', '4297f44b13955235245b2497399d7a93', '09222'),
-(25, '', '', '', '4297f44b13955235245b2497399d7a93', ''),
-(26, 'tinh', 'ductinh146@gmail.com', '12asd', '4297f44b13955235245b2497399d7a93', '09222'),
-(27, 'tinh', 'ductinh146@gmail.com', '12asd', '4297f44b13955235245b2497399d7a93', '09222');
+(24, 'tinh', 'ductinh1462@gmail.com', '12asd', '4297f44b13955235245b2497399d7a93', '09222');
 
 -- --------------------------------------------------------
 
@@ -431,29 +423,6 @@ INSERT INTO `tbl_sanpham` (`id_sanpham`, `tensp`, `masp`, `giasp`, `soluong`, `h
 (45, 'Dây nịt đơn giản', 'SP34', '100000', 100, '1647510625_daynit4.jpg', '<p><em><strong>D&acirc;y bằng da b&ograve; tự nhi&ecirc;n sản xuất tr&ecirc;n c&ocirc;ng nghệ hiện đại cho độ bền cao. Phần mặt kh&oacute;a từ chất liệu kim loại đặc biệt của Gucci, mạ v&agrave;ng s&aacute;ng b&oacute;ng kh&ocirc;ng han gỉ, kh&ocirc;ng bong tr&oacute;c theo thời gian</strong></em>.<img alt=\"heart\" src=\"http://cdn.ckeditor.com/4.17.2/full/plugins/smiley/images/heart.png\" style=\"height:23px; width:23px\" title=\"heart\" />​​​​​​​</p>\r\n', '<p><em><strong>D&acirc;y bằng da b&ograve; tự nhi&ecirc;n sản xuất tr&ecirc;n c&ocirc;ng nghệ hiện đại cho độ bền cao. Phần mặt kh&oacute;a từ chất liệu kim loại đặc biệt của Gucci, mạ v&agrave;ng s&aacute;ng b&oacute;ng kh&ocirc;ng han gỉ, kh&ocirc;ng bong tr&oacute;c theo thời gian</strong></em>.<img alt=\"heart\" src=\"http://cdn.ckeditor.com/4.17.2/full/plugins/smiley/images/heart.png\" style=\"height:23px; width:23px\" title=\"heart\" />​​​​​​​</p>\r\n', 1, 54),
 (46, 'Dây nịt màu vàng', 'SP34', '100000', 100, '1647510677_daynit5.jpg', '<p><em><strong>D&acirc;y bằng da b&ograve; tự nhi&ecirc;n sản xuất tr&ecirc;n c&ocirc;ng nghệ hiện đại cho độ bền cao. Phần mặt kh&oacute;a từ chất liệu kim loại đặc biệt của Gucci, mạ v&agrave;ng s&aacute;ng b&oacute;ng kh&ocirc;ng han gỉ, kh&ocirc;ng bong tr&oacute;c theo thời gian</strong></em>.<img alt=\"heart\" src=\"http://cdn.ckeditor.com/4.17.2/full/plugins/smiley/images/heart.png\" style=\"height:23px; width:23px\" title=\"heart\" />​​​​​​​</p>\r\n', '<p><em><strong>D&acirc;y bằng da b&ograve; tự nhi&ecirc;n sản xuất tr&ecirc;n c&ocirc;ng nghệ hiện đại cho độ bền cao. Phần mặt kh&oacute;a từ chất liệu kim loại đặc biệt của Gucci, mạ v&agrave;ng s&aacute;ng b&oacute;ng kh&ocirc;ng han gỉ, kh&ocirc;ng bong tr&oacute;c theo thời gian</strong></em>.<img alt=\"heart\" src=\"http://cdn.ckeditor.com/4.17.2/full/plugins/smiley/images/heart.png\" style=\"height:23px; width:23px\" title=\"heart\" />​​​​​​​</p>\r\n', 1, 54);
 
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `tbl_shipping`
---
-
-CREATE TABLE `tbl_shipping` (
-  `id_shipping` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `phone` varchar(10) NOT NULL,
-  `address` varchar(200) NOT NULL,
-  `note` varchar(255) NOT NULL,
-  `id_dangky` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Đang đổ dữ liệu cho bảng `tbl_shipping`
---
-
-INSERT INTO `tbl_shipping` (`id_shipping`, `name`, `phone`, `address`, `note`, `id_dangky`) VALUES
-(1, 'sss', '123123', 'ádasd', '123sad', 0),
-(7, 'ww', '13123', 'ádasd21', 'aa', 26);
-
 --
 -- Chỉ mục cho các bảng đã đổ
 --
@@ -513,12 +482,6 @@ ALTER TABLE `tbl_sanpham`
   ADD PRIMARY KEY (`id_sanpham`);
 
 --
--- Chỉ mục cho bảng `tbl_shipping`
---
-ALTER TABLE `tbl_shipping`
-  ADD PRIMARY KEY (`id_shipping`);
-
---
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
 
@@ -538,19 +501,19 @@ ALTER TABLE `tbl_baiviet`
 -- AUTO_INCREMENT cho bảng `tbl_cart`
 --
 ALTER TABLE `tbl_cart`
-  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
+  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_cart_details`
 --
 ALTER TABLE `tbl_cart_details`
-  MODIFY `id_cart_details` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
+  MODIFY `id_cart_details` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_dangky`
 --
 ALTER TABLE `tbl_dangky`
-  MODIFY `id_dangky` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id_dangky` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_danhmuc`
@@ -575,12 +538,6 @@ ALTER TABLE `tbl_lienhe`
 --
 ALTER TABLE `tbl_sanpham`
   MODIFY `id_sanpham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
-
---
--- AUTO_INCREMENT cho bảng `tbl_shipping`
---
-ALTER TABLE `tbl_shipping`
-  MODIFY `id_shipping` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

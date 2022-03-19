@@ -5,7 +5,7 @@
   <div class="step done "> <span> <a href="index.php?quanly=giohang" >Giỏ hàng</a></span> </div>
     <div class="step done "> <span><a href="index.php?quanly=vanchuyen" >Vận chuyển</a></span> </div>
     <div class="step current"> <span><a href="index.php?quanly=thongtinthanhtoan" >Thanh toán</a><span> </div>
-    <div class="step"> <span><a href="index.php?quanly=donhangdadat" >Lịch sử đơn hàng</a><span> </div>
+    <!-- <div class="step"> <span><a href="index.php?quanly=donhangdadat" >Lịch sử đơn hàng</a><span> </div> -->
   </div>
   <!-- end Responsive Arrow Progress Bar -->
   <!-- <div class="nav clearfix">
@@ -91,7 +91,21 @@
  <tr>
     <td colspan="8"  >
         <p style="float:left">Tổng tiền: <?php echo number_format($tongtien,0,',','.'). 'vnđ';?>
-        <!-- <p style="float:right"><a href="pages/main/themgiohang.php?xoatatca=1">Xóa tất cả</a> </p> -->
+         
+
+        <!-- <p style="float:right" ><a href="pages/main/themgiohang.php?xoatatca=1">Đặt hàng</a> </p> -->
+        <?php
+          if(isset($_SESSION['dangky'])){
+            ?>
+                <p> <a href="pages/main/thanhtoan.php">Đặt hàng</a></p>
+
+            <?php
+          }else{
+            ?>
+            <p> <a href="index.php?quanly=dangky">Đăng Ký Đặt Hàng</a></p>
+            <?php
+          }
+        ?>
         <div  style="clear:both"></div>
         <!-- <?php
           if(isset($_SESSION['dangky'])){
@@ -110,11 +124,13 @@
 
     </p>
 </td>
+         
    
 
     
 
   </tr>
+  
 <?php
     }else{
   ?>

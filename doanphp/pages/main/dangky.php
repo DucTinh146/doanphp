@@ -53,7 +53,7 @@
     </tr>
     <tr>
         <td>Mật khẩu</td>
-        <td><input type="text" name="matkhau" size="50"></td>
+        <td><input type="password" name="matkhau" size="50"></td>
     </tr>
     <tr>
         
